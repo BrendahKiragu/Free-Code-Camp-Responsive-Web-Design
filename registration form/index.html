@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Fill this form to help us serve you better</p>
+    <form id="survey-form">
+      <label for="name" id="name-label"> Name:</label>
+      <input required type="text" name="user" id="name" placeholder="name" />
+      <label for="email" id="email-label">Email:</label>
+      <input required type="email" name="user" id="email" placeholder="email" />
+      <label for="number" id="number-label">Number:</label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="1"
+        max="5"
+        placeholder="number"
+      />
+
+      <select name="choice" id="dropdown">
+        <option value="registered">Registered</option>
+        <option value="unregistered">Unregistered</option>
+      </select>
+
+      <fieldset class="fieldset">
+        <legend>Choose Your Marital Status:</legend>
+        <input
+          class="inline"
+          type="radio"
+          name="name"
+          id="Married"
+          value="status"
+        />Married
+        <input
+          class="inline"
+          type="radio"
+          name="name"
+          id="Single"
+          value="status"
+        />Single
+      </fieldset>
+      <p>Which countries would you like to travel(Check all that apply)</p>
+      <label for="italy">Italy</label>
+      <input
+        class="inline"
+        type="checkbox"
+        name="country1"
+        id="italy"
+        value="country"
+      />
+      <label for="spain">Spain</label>
+      <input
+        class="inline"
+        type="checkbox"
+        name="country2"
+        id="spain"
+        value="country"
+      />
+      <label for="switzerland">Switzerland</label>
+      <input
+        class="inline"
+        type="checkbox"
+        name="country3"
+        id="switzerland"
+        value="country"
+      />
+      <label for="mexico">Mexico</label>
+      <input
+        class="inline"
+        type="checkbox"
+        name="country4"
+        id="mexico"
+        value="country"
+      />
+      <label for="greece">Greece</label>
+      <input
+        class="inline"
+        type="checkbox"
+        name="country5"
+        id="greece"
+        value="country"
+      />
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea
+        name="comments"
+        id="comments"
+        placeholder="Enter your comment here..."
+      ></textarea>
+      <button id="submit" value="submit">Submit</button>
+    </form>
+  </body>
+</html>
