@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>el Mocha Cafe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <img
+          src="/images/coffee-truck.jpg"
+          alt="el mocha cafe"
+          id="header-img"
+        />
+        <div id="nav-links">
+          <a href="#hero" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#menu" class="nav-link">Menu</a>
+        </div>
+        <div id="burger-menu" onclick="toggleMenu()">☰</div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section id="hero">
+        <div class="hero-content">
+          <h1><i> el Mocha Cafe</i></h1>
+          <h1>Brewed to Perfection. Served with Love.</h1>
+          <p>Your neighborhood café, where every sip feels like home.</p>
+          <a href="#menu" class="cta-button">Explore Our Menu</a>
+          <a href="#about" class="cta-button">Learn more...</a>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+          <p>
+            el Mocha Cafe – your cozy spot for coffee, music and relaxation.
+          </p>
+        </div>
+        <a href="#about-details" id="learn-more-link">Learn More...</a>
+
+        <div id="about-details">
+          <div class="story-item">
+            <img
+              src="/images/coffee-berries.avif"
+              alt="Freshly Harvested Coffee Beans"
+            />
+            <div class="story-text">
+              <h3>The Origins of El Mocha</h3>
+              <p>
+                At El Mocha, we begin with hand-selected beans grown in the
+                finest local farms. The beans are freshly roasted to bring out
+                the rich, bold flavors that our café is famous for. Every cup is
+                brewed with love, care, and a touch of magic.
+              </p>
+            </div>
+          </div>
+
+          <div class="story-item">
+            <img
+              src="/images/coffee-shop.avif"
+              alt="Cozy Interior of the Café"
+            />
+            <div class="story-text">
+              <h3>A Cozy, Inviting Space</h3>
+              <p>
+                Our café's interior is designed to provide the perfect setting
+                for anyone looking to enjoy a delicious coffee. From comfy
+                seating to a tranquil ambiance, we want you to feel at home as
+                soon as you step in.
+              </p>
+            </div>
+          </div>
+
+          <div class="story-item">
+            <img
+              src="/images/coffee-friends.avif"
+              alt="Friends Enjoying Coffee Together"
+            />
+            <div class="story-text">
+              <h3>Building Community</h3>
+              <p>
+                We believe that a cup of coffee has the power to bring people
+                together. El Mocha is more than just a café – it's a place for
+                friends, family, and neighbors to connect, share stories, and
+                create memories over a cup of coffee.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="youtube-video">
+          <h3>Watch Our Story</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_bNbada12iM?si=xk-C38ipLLksD0Ux"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- menu section -->
+      <section id="menu">
+        <h2>Today's Menu</h2>
+
+        <div class="menu-category">
+          <h3>Coffee ☕</h3>
+        </div>
+        <ul class="menu-items">
+          <li>
+            <span class="emoji">☕</span>
+            <span class="item-name">Espresso</span>
+            <span class="item-price">$2.50</span>
+          </li>
+          <li>
+            <span class="emoji">☕</span>
+            <span class="item-name">Cappuccino</span>
+            <span class="item-price">$3.00</span>
+          </li>
+          <li>
+            <span class="emoji">☕</span>
+            <span class="item-name">Latte</span>
+            <span class="item-price">$3.50</span>
+          </li>
+          <li>
+            <span class="emoji">☕</span>
+            <span class="item-name">Americano</span>
+            <span class="item-price">$2.80</span>
+          </li>
+          <li>
+            <span class="emoji">☕</span>
+            <span class="item-name">Mocha</span>
+            <span class="item-price">$3.75</span>
+          </li>
+        </ul>
+
+        <div class="menu-category">
+          <h3>Desserts 🍰</h3>
+        </div>
+        <ul class="menu-items">
+          <li>
+            <span class="emoji">🍰</span>
+            <span class="item-name">Cheesecake</span>
+            <span class="item-price">$4.00</span>
+          </li>
+          <li>
+            <span class="emoji">🍩</span>
+            <span class="item-name">Donut</span>
+            <span class="item-price">$2.20</span>
+          </li>
+          <li>
+            <span class="emoji">🍪</span>
+            <span class="item-name">Chocolate Chip Cookie</span>
+            <span class="item-price">$1.50</span>
+          </li>
+          <li>
+            <span class="emoji">🍦</span>
+            <span class="item-name">Ice Cream Sundae</span>
+            <span class="item-price">$3.80</span>
+          </li>
+          <li>
+            <span class="emoji">🍫</span>
+            <span class="item-name">Brownie</span>
+            <span class="item-price">$2.75</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- contact section -->
+      <section id="contact">
+        <h2>Contact Us for Delivery</h2>
+        <p>
+          Craving something delicious? We deliver your favorite coffee and
+          desserts straight to your door!
+        </p>
+
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input type="submit" value="Order Now" id="submit" />
+        </form>
+        <ul>
+          <li>
+            <span>💬</span>Socials:
+            <a href="https://facebook.com/elmochacafe" target="_blank"
+              >Facebook</a
+            >,
+            <a href="https://twitter.com/elmochacafe" target="_blank">Twitter</a
+            >,
+            <a href="https://instagram.com/elmochacafe" target="_blank"
+              >Instagram</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
