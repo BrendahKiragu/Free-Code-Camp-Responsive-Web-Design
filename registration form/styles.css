@@ -1,15 +1,20 @@
 body {
   width: 100%;
-  height: 100vh;
+  height: auto;
   margin: 0;
-  background-color: #1b1b32;
-  color: #f5f6f7;
+  background-image: url("/images/anfield.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #f3f3f3;
+  font: 800;
   font-family: Tahoma;
   font-size: 16px;
 }
 
-h1, p {
-  margin: 1em auto;
+h1,
+p {
+  margin: 0.8em auto;
   text-align: center;
 }
 
@@ -44,7 +49,8 @@ select {
   min-height: 2em;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: #0a0a23;
   border: 1px solid #0a0a23;
   color: #ffffff;
@@ -71,15 +77,35 @@ input[type="file"] {
   padding: 1px 2px;
 }
 
-.inline{
-  display: inline; 
+.inline {
+  display: inline;
 }
 
-textarea{
+textarea {
   width: 100%;
   height: 100px;
 }
 
-.fieldset{
+.fieldset {
   margin: 20px 0;
+}
+
+#survey-form {
+  background-color: #1e1e31cc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+#submit {
+  background-color: #37a565;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
 }

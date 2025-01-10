@@ -3,89 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survey form</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Fill this form to help us serve you better</p>
+    <h1 id="title">Liverpool FC Registration Form</h1>
+    <p id="description">Fill this form to join Liverpool Football Club</p>
     <form id="survey-form">
       <label for="name" id="name-label"> Name:</label>
-      <input required type="text" name="user" id="name" placeholder="name" />
+      <input
+        required
+        type="text"
+        name="user"
+        id="name"
+        placeholder="Enter your name"
+      />
       <label for="email" id="email-label">Email:</label>
-      <input required type="email" name="user" id="email" placeholder="email" />
-      <label for="number" id="number-label">Number:</label>
+      <input
+        required
+        type="email"
+        name="user"
+        id="email"
+        placeholder="Enter your email"
+      />
+      <label for="number" id="number-label">Age:</label>
       <input
         type="number"
         name="number"
         id="number"
         min="1"
-        max="5"
-        placeholder="number"
+        max="100"
+        placeholder="Enter your age"
       />
 
+      <label for="dropdown">Membership Type:</label>
       <select name="choice" id="dropdown">
-        <option value="registered">Registered</option>
-        <option value="unregistered">Unregistered</option>
+        <option value="standard">Standard</option>
+        <option value="premium">Premium</option>
       </select>
 
       <fieldset class="fieldset">
-        <legend>Choose Your Marital Status:</legend>
+        <legend>Choose Your Favorite Player:</legend>
         <input
           class="inline"
           type="radio"
-          name="name"
-          id="Married"
-          value="status"
-        />Married
+          name="player"
+          id="Salah"
+          value="Salah"
+        />Mohamed Salah
         <input
           class="inline"
           type="radio"
-          name="name"
-          id="Single"
-          value="status"
-        />Single
+          name="player"
+          id="Mane"
+          value="Mane"
+        />Dominik Szoboszlai
+        <input
+          class="inline"
+          type="radio"
+          name="player"
+          id="Firmino"
+          value="Firmino"
+        />Alison Becker
       </fieldset>
-      <p>Which countries would you like to travel(Check all that apply)</p>
-      <label for="italy">Italy</label>
+      <p>Which matches would you like to attend? (Check all that apply)</p>
+      <label for="manutd">Manchester United</label>
       <input
         class="inline"
         type="checkbox"
-        name="country1"
-        id="italy"
-        value="country"
+        name="match1"
+        id="manutd"
+        value="manutd"
       />
-      <label for="spain">Spain</label>
+      <label for="chelsea">Chelsea</label>
       <input
         class="inline"
         type="checkbox"
-        name="country2"
-        id="spain"
-        value="country"
+        name="match2"
+        id="chelsea"
+        value="chelsea"
       />
-      <label for="switzerland">Switzerland</label>
+      <label for="arsenal">Arsenal</label>
       <input
         class="inline"
         type="checkbox"
-        name="country3"
-        id="switzerland"
-        value="country"
+        name="match3"
+        id="arsenal"
+        value="arsenal"
       />
-      <label for="mexico">Mexico</label>
+      <label for="manCity">Manchester City</label>
       <input
         class="inline"
         type="checkbox"
-        name="country4"
-        id="mexico"
-        value="country"
+        name="match4"
+        id="manCity"
+        value="manCity"
       />
-      <label for="greece">Greece</label>
+      <label for="tottenham">Tottenham</label>
       <input
         class="inline"
         type="checkbox"
-        name="country5"
-        id="greece"
-        value="country"
+        name="match5"
+        id="tottenham"
+        value="tottenham"
       />
       <label for="comments">Any comments or suggestions?</label>
       <textarea
