@@ -1,0 +1,153 @@
+#navbar {
+  display: flex;
+  background-color: #000000;
+  padding: 10px 0;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#navbar ul li {
+  display: inline;
+}
+
+/* Styling for the welcome section */
+#welcome-section {
+  background-color: lightgray;
+  color: #000000;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+}
+
+p {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.emoji {
+  font-size: 1.6rem;
+}
+
+.next-section {
+  border: 2px solid #f0f0f0;
+  padding: 0.7rem;
+  border-radius: 32px;
+  background-color: white;
+}
+
+/* Styling for the project cards */
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.project-tile {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.project-tile h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-tile p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.project-tile a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.project-tile a:hover {
+  text-decoration: underline;
+}
+
+#footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#footer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+#footer ul,
+#navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer ul li,
+#nabar ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#footer ul li a,
+#navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#footer ul li a:hover,
+#navbar ul li a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+#footer ul li a i {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  #navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-tile {
+    width: 90%;
+  }
+}
