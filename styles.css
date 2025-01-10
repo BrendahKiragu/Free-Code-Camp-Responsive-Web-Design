@@ -36,20 +36,31 @@ p {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
-  padding: 20px;
-  background-color: lightgray;
+  justify-content: center;
+  margin: 15px;
 }
 
 .project-card {
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
   width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 6px rgba(95, 21, 21, 0.1);
+  overflow: hidden;
   text-align: center;
+}
+
+.project-card img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
 }
 
 .project-card:hover {
@@ -59,12 +70,12 @@ p {
 
 .project-card h2 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .project-card p {
   font-size: 1rem;
-  margin-bottom: 20px;
+  margin: 0 0 10px;
 }
 
 .project-card a {
