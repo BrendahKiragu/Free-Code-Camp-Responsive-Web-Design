@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>technical documentation page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Technical Documentation</header>
+      <a href="#Introduction" class="nav-link"
+        >Introduction</a
+      >
+      <a href="#HTML" class="nav-link">HTML</a>
+      <a href="#CSS" class="nav-link">CSS</a>
+      <a href="#JavaScript" class="nav-link">JavaScript</a>
+      <a href="#Java" class="nav-link">Java</a>
+      <a href="#Python" class="nav-link">Python</a>
+      <a href="#Reference" class="nav-link">Reference</a>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <p>
+          Web languages are the foundation of web development, enabling the
+          creation and styling of web pages, as well as adding interactivity and
+          functionality.
+        </p>
+        <p>
+          HTML, CSS, and JavaScript are the core technologies used in web
+          development. Each of these languages serves a specific purpose and
+          works together to create a complete web experience.
+        </p>
+        <p>
+          Understanding these languages is essential for anyone looking to build
+          or maintain websites, as they provide the tools needed to structure
+          content, design layouts, and implement interactive features.
+        </p>
+      </section>
+
+      <section id="HTML" class="main-section">
+        <header>HTML</header>
+
+        <p>
+          HTML (HyperText Markup Language) is the standard language for creating
+          web pages.
+        </p>
+        <code>&lt;!DOCTYPE html&gt; </code>
+        <p>
+          HTML (HyperText Markup Language) is the standard language used to
+          create web pages. It provides the basic structure of a website, which
+          is then enhanced and modified by other technologies like CSS and
+          JavaScript. HTML uses a series of elements and tags to define the
+          content and layout of a web page. Learning HTML is the first step in
+          web development, as it forms the backbone of all web content.
+        </p>
+        <p>Here is basic structure of HTML</p>
+        <code>
+          &lt;!DOCTYPE html&gt; &lt;html lang="en"&gt; &lt;head&gt; &lt;meta
+          charset="UTF-8"&gt; &lt;meta name="viewport"
+          content="width=device-width, initial-scale=1.0"&gt;
+          &lt;title&gt;Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;!--
+          Content goes here --&gt; &lt;/body&gt; &lt;/html&gt;
+        </code>
+
+        <h3>Notes</h3>
+        <ul>
+          <li>Defines the content of web pages</li>
+          <li>Uses tags to structure elements</li>
+        </ul>
+      </section>
+
+      <section id="CSS" class="main-section">
+        <header>CSS</header>
+        <p>
+          CSS (Cascading Style Sheets) is a style sheet language used for
+          describing the presentation of a document written in HTML. It controls
+          the layout and appearance of multiple web pages all at once, making
+          site-wide changes easy to implement. CSS allows you to apply styles to
+          HTML elements, such as fonts, colors, spacing, and more.
+        </p>
+        <p>Here is sample structure of CSS</p>
+        <code>body { background-color: #f0f0f0; }</code>
+        <code>h1 { color: blue; }</code>
+        <h3>Notes</h3>
+        <ul>
+          <li>Used for layout design</li>
+          <li>Enhances web page appearance</li>
+        </ul>
+      </section>
+
+      <section id="JavaScript" class="main-section">
+        <header>JavaScript</header>
+        <p>
+          JavaScript is a versatile programming language that allows you to
+          create dynamic and interactive web pages. It is an essential part of
+          web development, enabling you to add functionality such as responding
+          to user actions, manipulating the content of the web page, and
+          communicating with servers. JavaScript is executed on the client side,
+          meaning it runs in the user's web browser, which makes it fast and
+          efficient for creating responsive user interfaces.
+        </p>
+        <p>Here is sample structure of JavaScript</p>
+
+        <code
+          >document.getElementById("myButton").onclick = function() {
+          alert("Clicked!"); };</code
+        >
+        <code
+          >fetch("https://api.example.com").then(response =>
+          response.json());</code
+        >
+        <h3>Notes</h3>
+        <ul>
+          <li>Event handling</li>
+          <li>Dynamic page manipulation</li>
+        </ul>
+      </section>
+
+      <section id="Java" class="main-section">
+        <header>Java</header>
+        <p>
+          Java is a high-level, class-based, object-oriented programming
+          language that is designed to have as few implementation dependencies
+          as possible. It is a general-purpose programming language intended to
+          let application developers write once, run anywhere (WORA), meaning
+          that compiled Java code can run on all platforms that support Java
+          without the need for recompilation. Java is widely used for building
+          enterprise-scale applications, Android apps, and web servers.
+        </p>
+        <p>Here is sample structure of Java</p>
+        <code
+          >public class HelloWorld { public static void main(String[] args) {
+          System.out.println("Hello!"); } }</code
+        >
+        <h3>Notes</h3>
+        <ul>
+          <li>Used for web servers, Android apps, etc.</li>
+          <li>Compiled to bytecode for cross-platform use</li>
+        </ul>
+      </section>
+
+      <section id="Python" class="main-section">
+        <header>Python</header>
+        <p>
+          Python is a versatile and powerful programming language that is easy
+          to learn for beginners. It is widely used in web development, data
+          analysis, artificial intelligence, and scientific computing. Python's
+          simple and readable syntax makes it an excellent choice for those new
+          to programming. Additionally, it has a large and supportive community,
+          providing plenty of resources and libraries to help you get started.
+        </p>
+        <p>Here is sample structure of Python</p>
+
+        <code>def greet(name): print(f"Hello, {name}!")</code>
+        <code>import requests</code>
+        <h3>Notes</h3>
+        <ul>
+          <li>Great for data analysis</li>
+          <li>Readable and beginner-friendly syntax</li>
+        </ul>
+      </section>
+
+      <section id="Reference" class="main-section">
+        <header>Reference</header>
+        <ul>
+          <li>
+            All the documentation in this page is taken from
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
